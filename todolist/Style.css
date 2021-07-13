@@ -1,0 +1,38 @@
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  
+   .list-container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.25); 
+    padding: 10px;
+  }
+   
+   .no-elments {
+    display: none;
+  }
+  
+  .list-container:empty + .no-elments {
+    display: block;
+  } */
+  
+  .list-container button {
+    background: wheat;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
