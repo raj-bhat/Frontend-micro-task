@@ -3,8 +3,11 @@ const options = ["JavaScript", "HTML", "CSS", "React", "Angular", "Zustand", "Ne
 
 const listContainer = document.getElementById("listContainer");
 
-function createAnddlete(){
-const Dfrangment=new DocumentFragment();
+/* creating document fragment and then adding items from above array
+upon clicking on button deleting the node */
+
+function createAnddelete(){
+const Dfragment=new DocumentFragment();
 options.forEach(option=>{
   const todo = document.createElement("div");
   const description = document.createElement("span");
@@ -12,30 +15,14 @@ options.forEach(option=>{
 
   description.textContent = option;
   button.textContent = "Done";
-  button.id="bttn";
   
- 
   todo.appendChild(description);
  todo.appendChild(button);
-  Dfrangment.appendChild(todo);
+  Dfragment.appendChild(todo);
   button.addEventListener("click", function () {
     todo.remove();
   })
 })
-listContainer.appendChild(Dfrangment);
+listContainer.appendChild(Dfragment);
 }
-document.addEventListener('DOMContentLoaded',createAnddlete);
-
-
-
-
-
-
-
-
-
-
-  
-
- 
- 
+document.addEventListener('DOMContentLoaded',createAnddelete);
