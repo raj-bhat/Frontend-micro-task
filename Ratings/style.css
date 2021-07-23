@@ -1,0 +1,24 @@
+
+.stars a{
+    
+    cursor: pointer;
+    padding: 5px;
+}
+
+  .stars:hover a{
+    
+color:#f7656a;
+
+}  
+.star a:hover{
+    color:#f7656a;
+}
+
+.stars a:hover ~ a {    
+
+    opacity: 30%;
+    
+    } 
+    .orange{
+        color:orange
+    }
